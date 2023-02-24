@@ -13,8 +13,15 @@ export default {
 const Template = (args) => Button(args);
 
 export const Primary = Template.bind({});
-
 Primary.args = {
-  label: 'Button',
+  label: 'Primary',
+};
+export const Secondary = Template.bind({});
+Primary.args = {
+  label: 'Secondary',
+};
+export const Tertiary = Template.bind({});
+Primary.args = {
+  label: 'Tertiary',
 };
 
