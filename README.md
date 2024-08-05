@@ -1,10 +1,10 @@
-# Storybook deployment to Github pages
+# hub-bamboo-insea-sync
 
-An example on how to deploy Storybook to Github pages
+## Introduction
+This Cron task fetches user data for the tenant `sequoiacap` with geo location `insea` using the BambooHR service and syncs it with the following tables:
+  - `employee`
+  - `employee_profile`
+  - `employee_enc`
 
-See the [Storybook Github Page](https://deerawan.github.io/storybook-github-pages-example/)
-
-## About Deployment
-
-The storybook deployment is executed via Github Action to `gh-pages` branch.
-See this [workflow](https://github.com/deerawan/storybook-github-pages-example/blob/main/.github/workflows/storybook.yml) to see how it works.
+## Cron Schedule
+Cron job is scheduled to run every day at 11:00AM
