@@ -5,11 +5,11 @@ This repository contains a Cron task that fetches employee data for all the tena
 
 ## Functionality
 The cron task performs the following operations:
-  - Backups the current tables.
-  - Deletes previous backups.
-  - Truncates all tables.
-  - Syncs the data from bamboo hr to the current tables.
-  - Sends out email notifications to recievers mentioned in the env.
+  - Backups the current tables. - `_backup_existing_tables`
+  - Deletes previous backups. - `_delete_previous_backups`
+  - Truncates all tables. - `_truncate_existing_tables`
+  - Syncs the data from bamboo hr to the current tables. - `_create_employee_model` & `_remove_outdated_users`
+  - Sends out email notifications to recievers mentioned in the env. - `notify_job_status`
 
 ## Tables Synced
   - `employee` 
